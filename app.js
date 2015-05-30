@@ -1,11 +1,12 @@
 'use strict';
 var express = require('express'),
-  getName = require('./lib/dbAccess').getName;
+  path = require('path');
 
 var app = express();
 
-app.all('/hello.txt', function(req, res){
-  res.send(getName());
+app.use(express.static(path.join(__dirname, 'static')));
+app.get('/', function(req, res){
+  res.send('simple server');
 });
 
 var server = app.listen(3000, function() {
