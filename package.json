@@ -1,13 +1,24 @@
 {
-  "name": "node-app",
-  "description": "hello world test app",
+  "name": "NodeApp",
+  "description": "Baseline Node, express, gulp, browserify stack",
   "version": "0.0.1",
-  "private": true,
+  "private": false,
   "dependencies": {
-    "config": "^1.13.0",
+    "aws-sdk": "^2.1.33",
+    "body-parser": "^1.13.3",
+    "config": "^1.14.0",
     "express": "4.6.1",
-    "lodash": "2.4.1",
+    "gulp-jshint": "^1.11.2",
+    "lodash": "~3.10.0",
     "moment": "^2.10.3",
     "twix": "^0.6.4"
+  },
+  "devDependencies": {
+    "babelify": "^6.3.0",
+    "browserify": "^11.0.1",
+    "gulp": "^3.9.0",
+    "gulp-react": "^3.0.1",
+    "reactify": "^1.1.1",
+    "vinyl-source-stream": "^1.1.0"
   }
 }

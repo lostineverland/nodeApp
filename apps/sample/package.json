@@ -1,0 +1,10 @@
+{
+  "name": "rna",
+  "description": "This is a simple react ajax application",
+  "version": "0.0.1",
+  "private": false,
+  "dependencies": {
+    "react": "^0.13.3",
+    "superagent": "^1.3.0"
+  }
+}
